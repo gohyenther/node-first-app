@@ -1,5 +1,5 @@
 // imports
-var sayHelloVar = require('./sayHello');
+const sayHelloVar = require('./sayHello');
 const http = require('http');
 
 
@@ -12,7 +12,8 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World!\n');
+  res.write('Welcome to my first node app!\n')
+  res.end('In progress\n');
 });
 
 server.listen(port, hostname, () => {
