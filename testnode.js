@@ -18,3 +18,8 @@ server.listen(port, hostname, () => {
 */
 
 
+function sayHello(name) {
+  console.log('Hello ' + name + '!');
+}
+
+sayHello('YenTher');
