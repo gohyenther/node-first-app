@@ -13,7 +13,7 @@ emitter.on('logging', (arg) => {
   });
 
 
-  // raise an event called 'messageLogged' along with 2 arguments {id, url}
+// raise an event called 'messageLogged' along with 2 arguments {id, url}
 emitter.emit('messageLogged', { id: 1, url: 'http://' });
 
 // raise an evenet called logging along with 1 argument {data}
